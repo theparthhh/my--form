@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/chapter4.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 4</title>
+</head>
+<body>
+    <!-- <ul type="circle">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Services</li>
+    </ul>
+
+    <ol type="1">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Services</li>
+    </ol>
+<hr> -->
+<!-- <div> -->
+     <!-- <table>
+        <caption> Final Result of Students</caption>
+        <thead>
+<tr>
+    <th>S.No.</th> 
+    <th>Name</th>
+    <th>Marks</th>
+    <th>Subject</th>
+</tr>
+</thead>
+<tbody> -->
+<!-- <tr>
+    <td> 1.</td>
+    <td>Amit</td>
+    <td>55/80</td>
+    <td>Math</td>
+ </tr>
+<tr>
+    <td> 2.</td>
+    <td>Ayush</td>
+    <td>59/80</td>
+    <td>Math</td>
+</tr>
+<tr> -->
+    <!-- <td> 3.</td>
+    <td>Aarambh</td>
+    <td>53/80</td>
+    <td>Math</td>
+</tr>
+<tr>
+    <td> 4.</td>
+    <td>Abhinav</td>
+    <td>50/80</td>
+    <td>Math</td>
+</tr>
+</tbody>
+</table>
+</div> -->
+<!-- <HR>
+<div>
+<table>
+    <caption>RCB Winning Record</caption>
+    <tr>
+        <th>S.No</th>
+        <th>Opposition</th>
+        <th>Win\Loose</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>KKR</td>
+        <Td>Win</Td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>CSK</td>
+        <td>Win</td>
+    </tr> -->
+    <!-- <tr>
+        <td>3.</td>
+        <td>MI</td>
+        <TD>WIN</TD>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>PBKS</td>
+        <td>loose</td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>PBKS</td>
+        <td>WIN</td>
+    </tr>
+</table>
+</div> -->
+<hr>
+<div>
+    <h1>Filling your Gender </h1>
+    <form action="http://127.0.0.1:5500/form.php">
+    <!--<input type="text" placeholder="Enter your Name"> -->
+         Enter Your name <input type="text"> 
+         <br>
+        Sex: <label for="Male">
+            <input type="radio" id="Male" name="Gender" value="Male"> Male
+            </label>
+
+            <label for="Female">
+                <input type="radio" id="Female" name="Gender" value="Female"> Female
+            </label>
+
+            <label for="Transgender">
+            <input type="radio" id="Transgender" name="Gender" value="Transgender"> Transgender
+
+            </label>
+            <br>
+            <b>Add snacks:</b>
+            <label for=" Snacks">
+            <input type="checkbox" id="Snacks" name="food instruction" value="Snacks"> Snacks
+            </label>
+            <br>
+            <b>Date of Submission</b>
+            <label for="Date">
+                <input type="date">
+            </label>
+            <br>
+            <textarea name="Explain" id="Explain" cols="20" rows="10" placeholder="Tell about your self in 30 words"></textarea> <br>
+            <select name="car or bus" id="car or bus">
+                <option value="Select your prefernce"> Select your prefernce </option>
+                <option value="Car"> car </option>
+                    <option value="Bus"> Bus</option>
+                
+            </select> <br>
+            <label for="submit"></label>
+            <input type="submit"> 
+            
+            
+        <!-- <label for="Section A"> -->
+            <!-- <input type="radio" id="Section A" name="Section" value="Section A"> Section A
+        </label>
+        
+        <label for="Section B">
+            <input type="radio" id="Section B" name="Section" value="Section B"> Section B
+            
+        </label> -->
+    </form>
+
+
+</div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
